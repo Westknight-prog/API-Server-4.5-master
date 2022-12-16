@@ -22,7 +22,7 @@
         "Id": 3,
         "Name": "sam",
         "Email": "samemy1@hotmail.com",
-        "Password": "123sam123",
+        "Password": "123",
         "Created": 1671133359,
         "VerifyCode": "verified",
         "AvatarGUID": "e631a820-7ccc-11ed-bee9-bd9a642ad1c7"
