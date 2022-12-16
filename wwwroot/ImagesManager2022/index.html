@@ -211,7 +211,7 @@
     <script src="js/date.js"></script>
     <script src="js/accounts.js"></script>
     <script defer>
-        const periodicRefreshPeriod = 15;
+        const periodicRefreshPeriod = 5;
         let holdCheckETag = false;
         let currentETag = "";
         let createMode = true;
@@ -732,10 +732,11 @@
                                 openMessageDlg("Compte validé",
                                     "Votre compte a bien été valide vous pouvez maintenant vous connecter");
                                 $("#loginDlg").dialog("close");
+                                $(this).dialog("close");
                             }
-                                , error);
+                                , ()=>{openMessageDlg("Erreur validation","Le code entrez n'est pas valide veuillez réessayer")});
                             
-                            $(this).dialog("close");
+                            
                         }
 
                     }
